@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Welcome to my portfolio website. I am a software engineer specializing in HRMS and music recommender systems. Skilled in Python, PHP, HTML, CSS, Node.js, and experienced with Linux and DevOps tools."
+    />
+    <title>Your Name's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  
+  <body>
+    <script>
+      const theme = localStorage.getItem("theme") || "dark";
+      document.body.classList.add(theme);
+    </script>
+
+    <header class="header">
+      <div class="container">
+        <div class="header-textbox">
+          <h1 class="h1">
+            <span>Hi, I'm [Your Name]</span>
+            <span>Software Engineer</span>
+          </h1>
+          <p class="header-text">
+            A software engineer specializing in HRMS systems and music recommender projects. Skilled in Python, PHP, HTML, CSS, Node.js, and experienced with Linux and DevOps tools.
+          </p>
+          <div class="header-btns">
+            <a href="#contact" class="btn btn-cta">Hire me</a>
+            <a href="#work" class="btn btn-secondary">See my work</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="work">
+        <div class="container">
+          <h2 class="h2" id="work">Selected Work</h2>
+          <div class="work-boxes">
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">HRMS System</h3>
+                <p class="work-text">
+                  A robust HR management system for tracking employee records, leave, and payroll.
+                </p>
+                <ol class="work-technologies">
+                  <li>PHP</li>
+                  <li>MySQL</li>
+                  <li>Bootstrap</li>
+                </ol>
+              </div>
+            </div>
+            <div class="work-box">
+              <div class="work-textbox">
+                <h3 class="h3">Music Recommender System</h3>
+                <p class="work-text">
+                  A machine learning-based system recommending songs to users based on their preferences.
+                </p>
+                <ol class="work-technologies">
+                  <li>Python</li>
+                  <li>Scikit-learn</li>
+                  <li>Flask</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills">
+        <div class="container">
+          <h2 class="h2" id="skills">My Toolkit</h2>
+          <div class="skills-imgs">
+            <img src="assets/images/skills/python.webp" alt="Python" class="skills-img" loading="lazy" title="Python">
+            <img src="assets/images/skills/php.webp" alt="PHP" class="skills-img" loading="lazy" title="PHP">
+            <img src="assets/images/skills/html.webp" alt="HTML" class="skills-img" loading="lazy" title="HTML">
+            <img src="assets/images/skills/css.webp" alt="CSS" class="skills-img" loading="lazy" title="CSS">
+            <img src="assets/images/skills/nodejs.webp" alt="Node.js" class="skills-img" loading="lazy" title="Node.js">
+            <img src="assets/images/skills/linux.webp" alt="Linux" class="skills-img" loading="lazy" title="Linux">
+            <img src="assets/images/skills/devops.webp" alt="DevOps" class="skills-img" loading="lazy" title="DevOps">
+          </div>
+        </div>
+      </section>
+
+      <section class="contact">
+        <div class="container">
+          <h2 class="h2" id="contact">Send Message</h2>
+          <div class="contact-content">
+            <p class="contact-text">
+              I am available for freelance and full-time opportunities. Contact me to discuss your project.
+            </p>
+            <form action="#" class="contact-form">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="form-field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-cta">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">&copy; 2024 [Your Name] - Software Engineer</p>
+      </div>
+    </footer>
+  </body>
+</html>
